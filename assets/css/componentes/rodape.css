@@ -1,0 +1,27 @@
+.rodape__container {
+    align-items: center;
+    background-image: url(../../img/footer-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    display: grid;
+    font-size: 18px;
+    font-weight: 400;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.rodape__logo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 11.725rem;
+}
+
+.rodape__social {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}

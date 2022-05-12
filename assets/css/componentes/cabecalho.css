@@ -1,0 +1,36 @@
+.cabecalho__container {
+    align-items: center;
+    display: flex;
+    height: 130px;
+    justify-content: space-around;
+}
+
+.cabecalho__logo {
+    width: 9.725rem;
+}
+
+.cabecalho__menu {
+    background-color: #FFF;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 4rem;
+    padding: 50px;
+}
+
+.cabecalho__button {
+    border-radius: 30px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 50px;
+}
+
+.cabecalho__button--background {
+    background: linear-gradient(90deg, #F65130, #E9941A);
+}
+
+.cabecalho__button--background:hover {
+    transform: translate(0, 2px);
+}
