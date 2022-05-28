@@ -11,6 +11,19 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background: #fff;
+}
+
 /* Cabeçalho */
 
 .cabecalho_logo {
@@ -45,59 +58,41 @@ body {
 /* Hero/Header */
 
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "column1 column2";
     background-image: url(../img/background-integral-hero.png);
     background-size: cover;
     background-blend-mode: soft-light;
-    height: 912px;
-    z-index: 999;
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.column1_hero {
-    display: grid;
-    grid-area: column1;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas:
-        "row1"
-        "row2"
-        "row3";
+.hero .leftSideHero {
+    max-width: 700px;
+    margin: 25px;
 }
 
-.column2_hero {
-    display: grid;
-    grid-area: column2;
-    align-self: center;
-    margin: 0 auto;
+.hero .leftSideHero h2 {
+    font-size: 3.5em;
+    color: #fff;
 }
 
-.row1_hero {
-    display: grid;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    grid-area: row1;
+.hero .leftSideHero p {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 25px 0;
+}
+
+.hero .leftSideHero a {
+    display: inline-block;
+    background: #fff;
+    color: #f7d716;
+    padding: 8px 20px;
+    text-decoration: none;
     font-weight: 600;
-    justify-content: center;
-    font-size: 60px;
-    align-self: center;
-    width: 100%;
-    text-align: justify;
-    line-height: 30px;
-    letter-spacing: 2px;
-    color: #fff;
-    margin: 0 auto;
-}
-
-.textHero {
-    font-weight: 300;
-    width: 100%;
-    font-size: 72px;
-    letter-spacing: 2px;
-    padding: 10px 0 0 30px;
-    text-align: justify;
-    text-justify: inter-word;
-    color: #fff;
+    margin-top: 20px;
+    border-radius: 12px;
 }
 
 .typographyHero {
@@ -108,36 +103,58 @@ body {
     color: #f7d716;
 }
 
-.withEnergy {
-    transform: translateY(35px);
-    margin-left: 2px;
+.hero .svg_solar_system {
+    max-width: 600px;
+    margin-right: 25px;
 }
 
-.svg_solar_system {
-    width: 40rem;
+@media (max-width: 1250px) {
+    .hero {
+        padding: 150px 20px 50px;
+        flex-direction: column;
+    }
+    .hero .svg_solar_system {
+        display: none;
+    }
+
+    .hero .leftSideHero h2 {
+        justify-content: center;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .hero .leftSideHero p {
+        justify-content: center;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .HeroButton {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero .leftSideHero {
+        transform: translateY(82px);
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .hero .leftSideHero a {
+        display: grid;
+        transform: translateY(25px);
+        width: 50%;
+        margin: 12px auto;
+    }
 }
 
-.row2_hero {
-    display: grid;
-    grid-area: row2;
-    font-weight: 600;
-    font-size: 26px;
-    align-self: start;
-    text-align: justify;
-    line-height: 35px;
-    letter-spacing: 0.5px;
-    padding: 0 20%;
-    color: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin: 0 auto;
-}
-
-.row3_hero {
-    display: grid;
-    grid-area: row3;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
+@media (max-width: 800px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
 }
 
 .HeroButton {
@@ -146,32 +163,33 @@ body {
     padding: 12px;
     font-weight: 600;
     font-size: 22px;
-    background-color: #f7d716;
     border-radius: 12px;
     text-align: center;
     border: none;
     outline: none;
     cursor: pointer;
 }
-.HeroButton:hover {
-    background-color: #fff;
-    transition-duration: 0.8s;
-}
-.HeroButton:active {
-    position: relative;
-    top: 1px;
-}
 
 /* Section 2 */
 
-.titleRow {
+.section2 {
     display: grid;
-    grid-template-areas: "title text";
+    margin-top: 5vh;
+    grid-template-areas:
+        "title"
+        "cards";
+}
+
+.presentation {
+    display: grid;
+    grid-area: title;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 0 auto;
 }
 
 .titleSection2 {
     display: grid;
-    grid-area: title;
     font-weight: 300;
     width: 100%;
     font-size: 62px;
@@ -185,7 +203,6 @@ body {
 
 .textSection2 {
     display: grid;
-    grid-area: text;
     align-self: center;
     font-weight: 300;
     width: 100%;
@@ -195,23 +212,10 @@ body {
 
 .container2 {
     display: grid;
-    grid-template-areas:
-        "row1"
-        "row2";
-    position: relative;
-    width: 1150px;
-    padding: 20px;
+    grid-area: cards;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.cardRow {
-    margin-top: 35px;
-    display: grid;
-    grid-area: row2;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5vh;
 }
 
 .container2 .card {
@@ -261,7 +265,8 @@ body {
     color: #fff;
     border-radius: 40px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 45px;
+    text-align: center;
 }
 
 .container2 .card:nth-child(1) .circle,
@@ -289,4 +294,43 @@ body {
     filter: blur(0px);
     transform: scale(1.1);
     opacity: 1;
+}
+
+@media (max-width: 1199px) {
+    .container2 .card:nth-child(3) {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 799px) {
+    .container2 .card:nth-child(1) {
+        margin-top: 35px;
+    }
+    .container2 .card:nth-child(2) {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 960px) {
+    .presentation {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 840px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+    .titleSection2 {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .textSection2 {
+        margin: 12px auto;
+        width: 60%;
+        text-align: center;
+    }
 }
