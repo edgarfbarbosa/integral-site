@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,102 +8,156 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
-    <link rel="stylesheet" href="assets/css/componentes/rodape.css">
-
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/componentes/beneficios.css">
+    <link rel="stylesheet" href="./assets/css/componentes/projetos.css">
+    <link rel="stylesheet" href="./assets/css/componentes/estatisticas.css">
+    <link rel="stylesheet" href="./assets/css/componentes/formulario.css">
+    <link rel="stylesheet" href="./assets/css/componentes/rodape.css">
+    
     <title>Energia Solar | Integral – Serviços Customizados</title>
 </head>
-
 <body>
     <header class="cabecalho__container">
         <div>
             <img src="assets/img/logo-integral.png" alt="Logo da Integral" class="cabecalho__logo">
         </div>
-        <div class="typography_contact">
-            <letter> Contato </letter>
-            <Typography class="typography_numbers">XXXXXXXX</Typography>
+        <div>
+            <span class="cabecalho__contato">Contato</span>
+            <a class="cabecalho__numero">00 00000-0000</a>
         </div>
     </header>
-
-    <section class="hero">
-        <div class="leftSideHero">
-
-            <h2>
-                Vamos <span class="typographyHero">crescer</span> <br>
-                com energia.
-            </h2>
-
-            <p>
-                Use energia solar, veja quanto pode economizar na sua conta de luz. Nós gerenciamos o seu projeto do começo ao fim. Faça sua simulação agora.
-            </p>
-
-            <a href="#Contato">
-                <button class="HeroButton">
-                    Contato
-                </button>
-            </a>
-            <a href="#Orçamento">
-                <button class="HeroButton">
-                    Orçamento
-                </button>
-            </a>
-
+    <main>
+        <section class="hero">
+            <div class="leftSideHero">
+                <h2>Vamos <span class="typographyHero">crescer</span><br>com energia.</h2>
+                <p>Use energia solar, veja quanto pode economizar na sua conta de luz. Nós gerenciamos o seu projeto do começo ao fim. Faça sua simulação agora.</p>
+                <a href="#Contato"><button class="HeroButton">Contato</button></a>
+                <a href="#Orçamento"><button class="HeroButton">Orçamento</button></a>
+            </div>
+            <img class="svg_solar_system" src="assets/img/hero_energy.svg">
+        </section>
+        <section class="section2">
+            <div class="presentation">
+                <div class="titleSection2">
+                    <p>Quais são os<br><span class="typographyHero">benefícios</span></p>
+                </div>
+                <div class="textSection2">
+                    <p>Uma breve apresentação sobre nossa empresa e seus benefícios.</p>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="card">
+                    <div class="circle">
+                        <h2>01</h2>
+                    </div>
+                    <div class="content">
+                        <p></p>
+                        <!-- <a href="#"></a> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>02</h2>
+                    </div>
+                    <div class="content">
+                        <p></p>
+                        <!-- <a href="#"></a> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>03</h2>
+                    </div>
+                    <div class="content">
+                        <p></p>
+                        <!-- <a href="#"></a> -->
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <div class="projects__header">
+            <h1>Fornecendo <span class="projects__span--color">Energia Solar</span> confiável para nossos clientes</h1>
+            <p>Nossos projetos</p>
         </div>
-        <img class="svg_solar_system" src="assets/img/hero_energy.svg">
-    </section>
-
-    <section class="section2">
-
-        <div class="presentation">
-            <div class="titleSection2">
-                Quais são os <br> <span class="typographyHero">benefícios</span>
-            </div>
-            <div class="textSection2">
-                Uma breve apresentação sobre nossa empresa e seus benefícios.
-            </div>
-        </div>
-
-        <div class="container2">
-            <div class="card">
-                <div class="circle">
-                    <h2> 01 </h2>
+        <section class="projects__container">
+            <article class="projects__article--container">
+                <img src="./assets/img/trab-1.jpeg" alt="" class="projects__img">
+                <div class="projects__content">
+                    <h2 class="projects__titulo">General Dynamics</h2>
+                    <p class="projects__info">In partnership with City Electric Cooperative</p>
                 </div>
-                <div class="content">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat facilis quidem molestias consequatur, sit perferendis suscipit? Soluta, blanditiis dolorem.</p>
-                    <a href="#"> Leia mais </a>
+            </article>
+            <article class="projects__article--container">
+                <img src="./assets/img/trab-2.jpeg" alt="" class="projects__img">
+                <div class="projects__content">
+                    <h2 class="projects__titulo"></h2>
+                    <p class="projects__info"></p>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="circle">
-                    <h2> 02 </h2>
+            </article>
+            <article class="projects__article--container">
+                <img src="./assets/img/trab-3.jpeg" alt="" class="projects__img">
+                <div class="projects__content">
+                    <h2 class="projects__titulo">Southland Solar Farms</h2>
+                    <p class="projects__info">In partnership with City Electric Cooperative</p>
                 </div>
-                <div class="content">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat facilis quidem molestias consequatur, sit perferendis suscipit? Soluta, blanditiis dolorem.</p>
-                    <a href="#"> Leia mais </a>
+            </article>
+        </section>
+        <section>
+            <h1 class="estatisticas__title">Estatísticas</h1>
+            <div class="estatisticas__container--display">
+                <div class="estatisticas__div--display neumorphism">
+                    <span>000</span>
+                    <span>Painéis Instalados</span>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="circle">
-                    <h2> 03 </h2>
+                <div class="estatisticas__div--display neumorphism">
+                    <span>000</span>
+                    <span>Valor economizado mensalmente %</span>
                 </div>
-                <div class="content">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat facilis quidem molestias consequatur, sit perferendis suscipit? Soluta, blanditiis dolorem.</p>
-                    <a href="#"> Leia mais </a>
+                <div class="estatisticas__div--display neumorphism">
+                    <span>000</span>
+                    <span>Avaliação dos clientes</span>
                 </div>
             </div>
-        </div>
-
-    </section>
-
+        </section>
+        <section class="formulario__section">
+            <img src="./assets/img/feet1.jpg" alt="">
+            <h1 class="formulario__titulo">Entre em contato conosco <br>sem análise de custo e proposta</h1>
+            <form class="formulario__container">
+                <div>
+                    <label for="" class="form__label">Nome</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div>
+                    <label for="" class="form__label">Email</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div>
+                    <label for="" class="form__label">Mensagem</label>
+                    <textarea cols="70" rows="10" type="text" class="form__input"></textarea>
+                </div>
+                <button class="form__button">Pedir informações</button>
+            </form>
+        </section>
+    </main>
     <footer class="rodape__container">
         <div>
-
+            <img src="assets/img/logo-integral.png" alt="Logo da Integral" class="rodape__logo">
+            <span>Empresa especializada em projetos de energia solar<br> acessíveis e rentáveis para o setor residencial.</span>
+        </div>
+        <address class="rodape__adress">
+            <b>Endereço:</b>
+            Rua Francisco Lopes Martins, 000<br>
+            Macuco, Rio de Janeiro
+            <b>CNPJ:</b>
+            00.000.000/0000-00
+        </address>
+        <div class="rodape__social">
+            <span><img src="assets/img/icones/envelope-solid.svg" alt="Ícone e-mail" style="width: 15px; height: 15px;">e-mail:<a>contato@email.com</a></span>
+            <a><img src="assets/img/icones/whatsapp-brands.svg" alt="Ícone WhatsApp" style="width: 15px; height: 15px;">(22) 999999999</a>
         </div>
     </footer>
 </body>
-
 </html>

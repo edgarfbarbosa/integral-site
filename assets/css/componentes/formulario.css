@@ -1,0 +1,46 @@
+.formulario__section {
+    min-height: 100vh;
+    min-width: 50vw;
+    position: relative;
+    width: 100%;
+}
+
+.formulario__titulo {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    left: 125px;
+    position: absolute;
+    top: 150px;
+}
+
+.formulario__container {
+    left: 125px;
+    position: absolute;
+    top: 300px;
+}
+
+.form__label {
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form__input {
+    border: none;
+    border-radius: 15px;
+    display: block;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.form__button {
+    background-color: bisque;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.75rem;
+    padding: 1rem;
+}

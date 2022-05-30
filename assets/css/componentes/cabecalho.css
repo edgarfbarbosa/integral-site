@@ -1,3 +1,14 @@
+header {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 15px 100px;
+    position: absolute;
+    width: 100%;
+}
+
 .cabecalho__container {
     align-items: center;
     display: flex;
@@ -9,28 +20,16 @@
     width: 9.725rem;
 }
 
-.cabecalho__menu {
-    background-color: #FFF;
-    display: flex;
-    font-size: 20px;
-    font-weight: 700;
-    gap: 4rem;
-    padding: 50px;
-}
-
-.cabecalho__button {
-    border-radius: 30px;
-    color: #FFF;
-    cursor: pointer;
+.cabecalho__contato {
     font-size: 18px;
-    font-weight: 700;
-    padding: 20px 50px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
 }
 
-.cabecalho__button--background {
-    background: linear-gradient(90deg, #F65130, #E9941A);
-}
-
-.cabecalho__button--background:hover {
-    transform: translate(0, 2px);
+.cabecalho__numero {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 30px;
 }
