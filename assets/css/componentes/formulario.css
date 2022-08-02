@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.form__img {
+    filter: brightness(0.5);
+}
+
 .formulario__titulo {
     color: #fff;
     font-size: 3rem;
